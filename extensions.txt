@@ -1,0 +1,3 @@
+ms-python.python
+TabNine.tabnine-vscode
+ms-toolsai.jupyter

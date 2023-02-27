@@ -1,0 +1,45 @@
+# The type of authentication to use. [password, none]
+app-name: IDE Code 
+bind-addr: 0.0.0.0:8080
+
+# The type of authentication to use. [password, none]
+auth: none
+# The password for password authentication (can only be passed in via $PASSWORD or the config file)
+  # password: a7891bd39f77265282e92690
+# The password hashed with argon2 for password authentication (can only be passed in via $HASHED_PASSWORD or the config file).
+# Takes precedence over 'password'.
+  # hashed-password
+
+# Path to certificate. A self signed certificate is generated if none is provided.
+cert: false
+# Hostname to use when generating a self signed certificate.
+  # cert-host:
+# Path to certificate key when using non-generated cert.
+  # cert-key
+# Disable telemetry
+  # disable-telemetry
+# Disable update check. Without this flag, code-server checks every 6 hours against the latest github release and
+# then notifies you once every week that a new release is available.
+  # disable-update-check
+
+# Disable file downloads from Code. This can also be set with CS_DISABLE_FILE_DOWNLOADS set to 'true' or '1'.
+  # disable-file-downloads
+# Disable Workspace Trust feature. This switch only affects the current session
+  # disable-workspace-trust
+# Disable the coder/coder override in the Help: Getting Started page.
+  # disable-getting-started-override
+
+# Install or update a VS Code extension by id or vsix. The identifier of an extension is `${publisher}.${name}`.
+#  To install a specific version provide `@${version}`. For example: 'vscode.csharp@1.2.3'.
+# Extension MarketPlace: https://marketplace.visualstudio.com/VSCode 
+
+
+# user-data-dir:
+# extensions-dir:
+# List installed VS Code extensions
+  # list-extensions:
+# socket  
+  # socket:
+  # socket-mode:
+# uninstall 
+  # uninstall-extension
