@@ -9,7 +9,7 @@ ARG NB_GID="0"
 ARG HOME=/home/$NB_USER
 
 RUN apt update 
-RUN apt install -y curl zsh
+RUN apt install -y curl zsh git
 RUN curl -fsSL https://code-server.dev/install.sh | sh 
 
 RUN mkdir /opt/config/
@@ -31,3 +31,7 @@ CMD  /opt/config/run-ide.sh
 # working dir to robsz
 USER $NB_UID
 WORKDIR $HOME 
+
+# Installing oh-my-zsh
+RUN echo -en 'Y' | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+RUN sed -i 's/robbyrussell/fino-time/g' .zshrc

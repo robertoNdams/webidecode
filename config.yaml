@@ -1,6 +1,15 @@
-# The type of authentication to use. [password, none]
-app-name: IDE Code 
+# The name to use in branding. Will be shown in titlebar and welcome message 
+app-name: IDE Code
+# Text to show on login page
+  # welcome-text: "Welcome to your new VS CODE like IDE."
+# Address to bind to in host:port. You can also use $PORT to override the port.
 bind-addr: 0.0.0.0:8080
+# Path to a socket (bind-addr will be ignored).
+  # socket
+# File mode of the socket.
+  # socket-mode
+
+
 
 # The type of authentication to use. [password, none]
 auth: none
@@ -29,17 +38,13 @@ cert: false
 # Disable the coder/coder override in the Help: Getting Started page.
   # disable-getting-started-override
 
-# Install or update a VS Code extension by id or vsix. The identifier of an extension is `${publisher}.${name}`.
-#  To install a specific version provide `@${version}`. For example: 'vscode.csharp@1.2.3'.
-# Extension MarketPlace: https://marketplace.visualstudio.com/VSCode 
 
+# Path to the user data directory.
+  # user-data-dir:
+# Path to the extensions directory.
+  # extensions-dir:
 
-# user-data-dir:
-# extensions-dir:
-# List installed VS Code extensions
-  # list-extensions:
-# socket  
-  # socket:
-  # socket-mode:
-# uninstall 
-  # uninstall-extension
+# GitHub authentication token (can only be passed in via $GITHUB_TOKEN or the config file)
+  # github-auth
+# Domain used for proxying ports.
+  # proxy-domain 
