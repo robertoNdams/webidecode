@@ -1,7 +1,7 @@
 # The name to use in branding. Will be shown in titlebar and welcome message 
 app-name: IDE Code
 # Text to show on login page
-  # welcome-text: "Welcome to your new VS CODE like IDE."
+welcome-text: "Welcome to your new VS CODE like IDE."
 # Address to bind to in host:port. You can also use $PORT to override the port.
 bind-addr: 0.0.0.0:8080
 # Path to a socket (bind-addr will be ignored).

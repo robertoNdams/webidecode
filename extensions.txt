@@ -3,5 +3,6 @@
 # Extension MarketPlace: https://marketplace.visualstudio.com/VSCode 
 
 ms-python.python
-TabNine.tabnine-vscode
 ms-toolsai.jupyter
+formulahendry.code-runner
+
