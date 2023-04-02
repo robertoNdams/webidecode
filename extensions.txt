@@ -1,0 +1,8 @@
+# Install or update a VS Code extension by id or vsix. The identifier of an extension is `${publisher}.${name}`.
+#  To install a specific version provide `@${version}`. For example: 'vscode.csharp@1.2.3'.
+# Extension MarketPlace: https://marketplace.visualstudio.com/VSCode 
+
+ms-python.python
+ms-toolsai.jupyter
+formulahendry.code-runner
+

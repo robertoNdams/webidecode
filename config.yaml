@@ -1,0 +1,50 @@
+# The name to use in branding. Will be shown in titlebar and welcome message 
+app-name: IDE Code
+# Text to show on login page
+welcome-text: "Welcome to your new VS CODE like IDE."
+# Address to bind to in host:port. You can also use $PORT to override the port.
+bind-addr: 0.0.0.0:8080
+# Path to a socket (bind-addr will be ignored).
+  # socket
+# File mode of the socket.
+  # socket-mode
+
+
+
+# The type of authentication to use. [password, none]
+auth: none
+# The password for password authentication (can only be passed in via $PASSWORD or the config file)
+  # password: a7891bd39f77265282e92690
+# The password hashed with argon2 for password authentication (can only be passed in via $HASHED_PASSWORD or the config file).
+# Takes precedence over 'password'.
+  # hashed-password
+
+# Path to certificate. A self signed certificate is generated if none is provided.
+cert: false
+# Hostname to use when generating a self signed certificate.
+  # cert-host:
+# Path to certificate key when using non-generated cert.
+  # cert-key
+# Disable telemetry
+  # disable-telemetry
+# Disable update check. Without this flag, code-server checks every 6 hours against the latest github release and
+# then notifies you once every week that a new release is available.
+  # disable-update-check
+
+# Disable file downloads from Code. This can also be set with CS_DISABLE_FILE_DOWNLOADS set to 'true' or '1'.
+  # disable-file-downloads
+# Disable Workspace Trust feature. This switch only affects the current session
+  # disable-workspace-trust
+# Disable the coder/coder override in the Help: Getting Started page.
+  # disable-getting-started-override
+
+
+# Path to the user data directory.
+  # user-data-dir:
+# Path to the extensions directory.
+  # extensions-dir:
+
+# GitHub authentication token (can only be passed in via $GITHUB_TOKEN or the config file)
+  # github-auth
+# Domain used for proxying ports.
+  # proxy-domain 
