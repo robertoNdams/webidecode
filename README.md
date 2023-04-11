@@ -3,7 +3,7 @@
 
 Web IDE Code is a project that aims to render a vscode like web app through **code server**
 
-![code-server](images/code-server.png)
+![code-server](https://github.com/coder/code-server/raw/main/docs/assets/screenshot.png)
 
 ## [Code-Server](https://github.com/coder/code-server)
 
@@ -55,7 +55,11 @@ Contains the application settings among which :
    - user directory
    - extension directory
 
-By default, the application is called **IDE Code**, has a welcome-text, no authentication and runs on 0.0.0.0:8080
+By default: 
+* _the application is called **IDE Code**_
+*  _has a welcome-text (with password)_
+*  _no authentication (auth =  None)_ 
+*  _runs on `0.0.0.0:8080`_ 
 
 VSCode is also known to be a self configured environment through the extensions: 
 
@@ -73,8 +77,15 @@ formulahendry.code-runner
 ``` 
 
 ## RUN WEBIDECODE
-```bash
-docker run -it -p 8080:8080 -v config.yaml:/opt/config/config.yaml -v extensions.txt:/opt/config/extensions.txt --name codeide robertoNdams/webidecode
-```
 
+With the default values (extensions and configurations provided). Your web app vscode is available at `localhost:8080` 
+```bash
+docker run -it -p 8080:8080 --name code robszdams/webidecode
+``` 
+
+Whether is the extension file or the configuration if modifications need to be applied. A mapping is needed 
+
+```bash
+docker run -it -p 8080:8080 -v config.yaml:/opt/config/config.yaml -v extensions.txt:/opt/config/extensions.txt --name code robszdams/webidecode
+```
 
