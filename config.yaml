@@ -40,7 +40,7 @@ cert: false
 
 
 # Path to the user data directory.
-  # user-data-dir:
+  #user-data-dir
 # Path to the extensions directory.
   # extensions-dir:
 
