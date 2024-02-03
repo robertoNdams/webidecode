@@ -3,7 +3,7 @@
 
 Web IDE Code is a project that aims to render a vscode like web app through **code server**
 
-![code-server](https://github.com/coder/code-server/raw/main/docs/assets/screenshot.png)
+![code-server](https://github.com/robertoNdams/webidecode/blob/main/images/screenshot.png)
 
 ## [Code-Server](https://github.com/coder/code-server)
 
